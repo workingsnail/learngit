@@ -1,0 +1,24 @@
+廖雪峰git教程
+
+1、创建版本库：
+mkdir learngit：创建learngit文件夹
+cd learngit：定位到learngit文件夹
+pwd：显示当前目录
+
+git init：把当前目录变成git可以管理的仓库
+
+git add +文件名及格式：将文件添加进git仓库第一步
+git commit -m"对本次添加文件操作的说明"
+
+
+2、时光穿梭机
+git status：查看仓库当前的状态
+git diff：查看具体修改的细节，即修改前后的不同
+
+2.1、版本退回
+git log：显示从最近到最远的提交日志
+git log --pretty=oneline：简化显示从最近到最远的提交日志
+git reset --hard HEAD~n:回退到前n个版本
+cat 文件名及格式：查看文件内容
+git reflog：每一次命令记录，可以得到每次的版本号
+git reset --hard 版本号：穿梭到该版本号（commit_id）对应的版本
