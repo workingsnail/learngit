@@ -43,3 +43,16 @@ git reset HEAD 文件名及类型：将暂存区的修改撤销掉，重新放�
 rm 文件名及类型：删除工作区的指定文件
 git rm +文件名及类型：从版本库删除该文件   并且后续git commit（确实要删除此文件）
 git checkout -- 文件名及类型：撤销工作区的删除（工作区误删情况）
+
+3、远程仓库
+添加本电脑的SSH Key
+
+3.1、添加远程库
+git remote add origin 远程库ssh协议地址：关联本地与GitHub远程库
+git push -u origin master：关联后第一次推送master分支的所有内容
+git push origin master：向远程库推送最新修改
+
+3.2、从远程库克隆
+git clone 远程库ssh协议地址：从远程库克隆一份到本地库
+
+4、分支管理
