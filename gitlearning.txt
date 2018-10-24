@@ -56,3 +56,18 @@ git push origin master：向远程库推送最新修改
 git clone 远程库ssh协议地址：从远程库克隆一份到本地库
 
 4、分支管理
+
+4.1、创建与合并分支
+git branch：查看分支 
+git branch 分支名：创建分支
+git checkout 分支名：切换到指定分支
+git checkout -b 分支名：创建分支并切换到该分支
+git merge 分支名：合并某分支到当前分支
+git branch -d 分支名：删除指定分支
+
+4.2、解决冲突
+当分支所提交的内容存在冲突时，需要将内容重新修改为你想要的，然后提交
+
+4.3、分支管理策略
+git merge --no-ff -m"描述" 分支名：强制禁用fast forward模式，选用--no-ff的分支模式，这样可以通过
+git log --graph --pretty=oneline --abbrev-commit  查看分支历史的分支信息
