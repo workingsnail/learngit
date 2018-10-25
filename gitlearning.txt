@@ -80,3 +80,7 @@ git log --graph --pretty=oneline --abbrev-commit  查看分支历史的分支信
 git branch -D 分支名称：强行删除一个没有合并过的分支
 
 4.6、多人协作
+
+4.7、Rebase
+
+5、标签管理
